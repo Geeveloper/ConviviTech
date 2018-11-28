@@ -59,18 +59,21 @@
 		<!-- modernizr JS
 		============================================ -->		
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="libraries/particles.js-master/particles.min.js"></script>
+        <script src="libraries/particles.js-master/particles.js"></script>
+
     </head>
     <body>
         <script>
-            particlesJS.load("particles-js", "libraries/particles.js-master/assets/particles.json");
-            console.log("loading...");
+            particlesJS.load('particles-js', 'libraries/particles.js-master/assets/particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
         </script>
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Add your site or application content here -->
-        <div class="wrapper" id="particles-js">
+        <div id="particles-js" style="width: 150%; height: 90%; position: absolute; z-index: 5;"></div>
+        <div class="wrapper" is="particles-js">
             <header class="header-area">
                 <!-- Menu Area
                 ============================================ -->
@@ -79,7 +82,7 @@
                         <div class="row">
                             <div class="col-md-12 col-xs-12">
                                 <div class="logo float-left navbar-header">
-                                    <a class="navbar-brand" href="index.html"><img src="img/logo/ConviviTechBannerLogo.png" style="width: 400px; height: 50px" alt=""></a>
+                                    <a class="navbar-brand" href="index.html"><img src="img/logo/ConviviTechBannerWhiteLogo.png" style="width: 400px; height: 50px" alt=""></a>
                                     <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-2">
                                         <i class="fa fa-bars menu-open"></i>
                                         <i class="fa fa-times menu-close"></i>
@@ -88,13 +91,13 @@
                                 <div class="main-menu float-right collapse navbar-collapse" id="main-menu-2">
                                     <nav>
                                         <ul class="menu one-page">
-                                            <li class="active"><a href="#home-area">HOME</a></li>
-                                            <li><a href="#about-area">About   </a></li>
-                                            <li><a href="#features-area">FEATURES</a></li>
-                                            <li><a href="#screenshort-area">screenshots </a></li>
-                                            <li><a href="#pricing-area">pricing </a></li>
-                                            <li><a href="#review-area">reviews</a></li>
-                                            <li><a href="#support-area">support</a></li>
+                                            <li class="active"><a href="#home-area">Home</a></li>
+                                            <li><a href="#about-area">About</a></li>
+                                            <li><a href="#features-area">Features</a></li>
+                                            <li><a href="#screenshort-area">Screenshots</a></li>
+                                            <li><a href="#pricing-area">Pricing</a></li>
+                                            <li><a href="#review-area">Reviews</a></li>
+                                            <li><a href="#support-area">Support</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -537,10 +540,10 @@
                             <div class="slider-2">
                                 <div class="single-team text-center">
                                     <div class="team-image">
-                                        <img src="img/testimonial/1.png" alt="">
+                                        <img src="img/testimonial/kyle_myoot.jpg" alt="">
                                     </div>
                                     <div class="team-details mt-20">
-                                        <h2>Shakara Tasnim</h2>
+                                        <h2>Kyle Myott</h2>
                                         <div class="reating-icon">
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -549,7 +552,7 @@
                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
                                         </div>
                                         <div class="team-social fix">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorentium, totam rem <br>aperiam, eaque ipsa quae ab illo inventore veritatis et i architecto beatae vitae dicta sunt explicabo.<br>Nemo enim sit se cena hoye keno </p>
+                                            <p>This website is so good, I could eat it for lunch!</p>
                                         </div>
                                         <div class="test-icon">
                                             <i class="fa fa-quote-right" aria-hidden="true"></i>
@@ -640,39 +643,7 @@
                 </div>
             </div>
             <!-- brand logo
-            ============================================ -->
-            <div class="icon-slider-area ptb-110">
-                <div class="container">
-                    <div class="row">          
-                        <div class="item_all indicator-style3">
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/2.png" alt="" /></a>
-                            </div>
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/3.png" alt="" /></a>
-                            </div>
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/4.png" alt="" /></a>
-                            </div>
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/5.png" alt="" /></a>
-                            </div>
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/2.png" alt="" /></a>
-                            </div>
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/3.png" alt="" /></a>
-                            </div>
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/4.png" alt="" /></a>
-                            </div>
-                            <div class="col-md-12 single-item2">
-                                <a href="#"><img src="img/logo-slider/5.png" alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- contact area
             ============================================ -->
             <div class="map-area" id="support-area">
@@ -706,9 +677,7 @@
                                     </div>
                                     <div class="contact-text">
                                         <span>
-                                            +012 345 678 102
-                                            <br>
-                                            +012 345 678 102
+                                            +727 422 2299
                                         </span>
                                     </div>
                                 </div>
@@ -720,9 +689,9 @@
                                     </div>
                                     <div class="contact-text">
                                         <span>
-                                            <a href="#">urname@email.com </a>
+                                            <a href="#">austina@cat.pcsb.org</a>
                                                 <br>
-                                            <a href="#">urwebsitenaem.com</a>
+                                            <a href="#">alexanderaustin.me</a>
                                         </span>
                                     </div>
                                 </div>
@@ -752,10 +721,9 @@
                     <div class="col-md-12 text-center">
                         <div class="footer-all">
                             <div class="footer-logo logo">
-                                <a href="#"><img src="img/logo/2.png" alt=""></a>
+                                <a href="#"><img src="img/logo/ConviviTechLogo.png" style="width: 50px; height: 50px" alt=""></a>
                             </div>
                             <div class="footer-icon">
-                                <p>There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in </p>
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -763,13 +731,6 @@
                                     <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                                 </ul>
-                            </div>
-                            <div class="footer-text">
-                                <span>
-                                    Copyright©
-                                    <a href="http://bootexperts.com/" target="_blank">APPRO</a>
-                                    2017.All right reserved.
-                                </span>
                             </div>
                         </div>
                     </div>
