@@ -60,20 +60,16 @@
 		============================================ -->		
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="libraries/particles.js-master/particles.js"></script>
-
+        <script type="text/javascript" src="js/jquery.particleground.js"></script>
+        <script type="text/javascript" src="js/demo.js"></script>
     </head>
     <body>
-        <script>
-            particlesJS.load('particles-js', 'libraries/particles.js-master/assets/particles.json', function() {
-                console.log('callback - particles.js config loaded');
-            });
-        </script>
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Add your site or application content here -->
-        <div id="particles-js" style="width: 150%; height: 90%; position: absolute; z-index: 5;"></div>
-        <div class="wrapper" is="particles-js">
+        <div id="particles-hero" style="width: 150%; height: 92%; position: absolute; z-index: 5;"></div>
+        <div class="wrapper">
             <header class="header-area">
                 <!-- Menu Area
                 ============================================ -->
@@ -509,7 +505,8 @@
             </div>
             <!-- newsletter area
             ============================================ -->
-            <div class="newsletter-area bg-oapcity-40 ptb-120 bg-img-4">
+            <div class="newsletter-area bg-oapcity-40 ptb-120 bg-img-4 parallax">
+                <div id="particles-newsletter" style="top: 700px; position: absolute; z-index: 0; width: 100%; height: 100%"></div>
                 <div class="container">
                     <div class="about-bottom-left download-mrg clearfix text-center">
                         <h2>sign up for newsletter</h2>
@@ -553,48 +550,6 @@
                                         </div>
                                         <div class="team-social fix">
                                             <p>This website is so good, I could eat it for lunch!</p>
-                                        </div>
-                                        <div class="test-icon">
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-team text-center">
-                                    <div class="team-image">
-                                        <img src="img/testimonial/1.png" alt="">
-                                    </div>
-                                    <div class="team-details mt-20">
-                                        <h2>Shakara Tasnim</h2>
-                                        <div class="reating-icon">
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="team-social fix">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorentium, totam rem <br>aperiam, eaque ipsa quae ab illo inventore veritatis et i architecto beatae vitae dicta sunt explicabo.<br>Nemo enim sit se cena hoye keno </p>
-                                        </div>
-                                        <div class="test-icon">
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-team text-center">
-                                    <div class="team-image">
-                                        <img src="img/testimonial/1.png" alt="">
-                                    </div>
-                                    <div class="team-details mt-20">
-                                        <h2>Shakara Tasnim</h2>
-                                        <div class="reating-icon">
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="team-social fix">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorentium, totam rem <br>aperiam, eaque ipsa quae ab illo inventore veritatis et i architecto beatae vitae dicta sunt explicabo.<br>Nemo enim sit se cena hoye keno </p>
                                         </div>
                                         <div class="test-icon">
                                             <i class="fa fa-quote-right" aria-hidden="true"></i>
