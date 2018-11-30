@@ -1405,10 +1405,10 @@ a.download.active {
 
 .team-image > img {
     display: inline;
-    height: 83px;
-    width: 83px;
+    height: 95px;
+    width: 95px;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 .team-details > h2 {
     color: #777777;
