@@ -808,6 +808,7 @@ Margin top
 .bg-img-1 {
     background: url("img/logo/ConviviTechLogo.png") no-repeat scroll center bottom / cover;
 }
+
 .bg-oapcity-40 {
     position: relative;
 }
@@ -816,12 +817,13 @@ Margin top
     bottom: 0;
     content: "";
     left: 0;
-    opacity: 0.8;
+    opacity: 0.5;
     position: absolute;
     z-index: 0;
     right: 0;
     top: 0;
     width: 100%;
+    overflow: hidden;
 }
 .slider-text h1 {
     color: #ffffff;
@@ -1190,7 +1192,7 @@ p.about-pb {
     background: rgba(0, 0, 0, 0) url("img/bg-img/bg-2.jpg") no-repeat scroll center bottom / cover;
 }
 .bg-img-4 {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg-6.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/pattern/background-pattern-biru-aqua-turquoise-teal.png") no-repeat scroll center center / cover;
 }
 .download-mrg {
     position: relative;
